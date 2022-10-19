@@ -51,8 +51,8 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="getstarted scrollto" href="#contact">Registrate</a></li>
-          <li><a class="getstarted scrollto" href="#about">Inicio de sesión</a></li>
+          <li><a class="getstarted scrollto" href="sign_in.php">Registrate</a></li>
+          <li><a class="getstarted scrollto" href="login.php">Inicio de sesión</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -76,11 +76,10 @@
             <div class="portfolio-wrap">
               <img src="assets/img/perros/perro.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
                 <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
               </div>
               <div class="portfolio-info">
-                <h4>App 1</h4>
+                <h4>Caninos</h4>
                 <p>App</p>
               </div>
             </div>
@@ -90,11 +89,10 @@
             <div class="portfolio-wrap">
               <img src="assets/img/gatos/gato.jpg" class="img-fluid" alt="" style="height:100%; width:100%;">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bi bi-plus"></i></a>
                 <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
               </div>
               <div class="portfolio-info">
-                <h4>App 2</h4>
+                <h4>Felinos</h4>
                 <p>App</p>
               </div>
             </div>
