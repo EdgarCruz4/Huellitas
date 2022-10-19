@@ -1,6 +1,9 @@
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #f8fafb; }
+  background: #4CA1AF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #C4E0E5, #4CA1AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
 p {
   color: #b3b3b3;
@@ -18,13 +21,15 @@ a {
     text-decoration: none !important; }
 
 .content {
-  padding: 7rem 0; }
+  padding: 7rem 0;
+}
 
 h2 {
   font-size: 20px; }
 
 .form-block {
   background: #fff;
+  border-radius: 15px;
   padding: 60px;
   -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1); }
@@ -167,11 +172,11 @@ h2 {
   background: #ccc; }
 
 .control input:checked ~ .control__indicator {
-  background: #38d39f; }
+  background: #008df8; }
 
 .control:hover input:not([disabled]):checked ~ .control__indicator,
 .control input:checked:focus ~ .control__indicator {
-  background: #4dd8a9; }
+  background: #4dc1d8; }
 
 .control input:disabled ~ .control__indicator {
   background: #e6e6e6;
