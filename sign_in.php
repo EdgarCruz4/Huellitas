@@ -35,15 +35,15 @@
                 <div class="mb-5" align="center">
                   <h3>Registrate en <strong>Huellitas</strong></h3>
                 </div>
-                <form action="#" method="post">
+                <form action="php/consultas/addUsuario.php" method="POST">
                   <div class="form-group first">
                     <label for="username">Nombre del usuario</label>
-                    <input type="text" class="form-control" id="username" required>
+                    <input type="text" name="nombre" class="form-control" id="username" required>
                   </div class="mb-4">
 
                   <div class="form-group last mb-4">
                     <label for="apellido">Apellido</label>
-                    <input type="text" class="form-control" id="apellido" required>
+                    <input type="text" name="apellido" class="form-control" id="apellido" required>
                   </div>
 
                   <div class="form-group last mb-4">
@@ -62,7 +62,7 @@
                   </div>
 
                   <div class="mb-3 mt-5">
-                    <input type="submit" value="Sign In" class="btn btn-pill text-white btn-block btn-primary">
+                    <button type="submit"class="btn btn-pill text-white btn-block btn-primary"></button>
                   </div>
 
                   <div class="d-flex mb-4 align-items-center">
