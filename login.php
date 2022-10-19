@@ -16,7 +16,7 @@
     <!-- Style -->
     <link rel="stylesheet" href="assets/css/login.css">
 
-    <title>Login #9</title>
+    <title>Login</title>
   </head>
   <body>
   
@@ -32,43 +32,33 @@
           <div class="row justify-content-center">
             <div class="col-md-12">
               <div class="form-block">
-                  <div class="mb-4">
-                  <h3>Sign In to <strong>Colorlib</strong></h3>
-                  <p class="mb-4">Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur adipisicing.</p>
+                <div class="mb-5" align="center">
+                  <h3>Inicia sesión en <strong>Huellitas</strong></h3>
                 </div>
                 <form action="#" method="post">
                   <div class="form-group first">
-                    <label for="username">Username</label>
-                    <input type="text" class="form-control" id="username">
+                    <label for="correo">Correo</label>
+                    <input type="text" class="form-control" id="correo" required>
 
-                  </div>
+                  </div class="mb-4">
                   <div class="form-group last mb-4">
-                    <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password">
-                    
-                  </div>
-                  
-                  <div class="d-flex mb-5 align-items-center">
-                    <label class="control control--checkbox mb-0"><span class="caption">Remember me</span>
-                      <input type="checkbox" checked="checked"/>
-                      <div class="control__indicator"></div>
-                    </label>
-                    <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span> 
+                    <label for="password">Contraseña</label>
+                    <input type="password" class="form-control" id="password" required>
                   </div>
 
-                  <input type="submit" value="Log In" class="btn btn-pill text-white btn-block btn-primary">
+                  <div class="mb-3 mt-5">
+                    <input type="submit" value="Log In" class="btn btn-pill text-white btn-block btn-primary">
+                  </div>
 
-                  <span class="d-block text-center my-4 text-muted"> or sign in with</span>
+                  <div class="d-flex mb-4 align-items-center">
+                    <span class="ml-auto"><a href="index.php" class="forgot-pass">Regresa a la pagina de inicio</a></span> 
+                  </div>
+
+                  <span class="d-block text-center my-4 text-muted"> O inicia sesión con Googlge</span>
                   
                   <div class="social-login text-center">
-                    <a href="#" class="facebook">
-                      <span class="icon-facebook mr-3"></span> 
-                    </a>
-                    <a href="#" class="twitter">
-                      <span class="icon-twitter mr-3"></span> 
-                    </a>
                     <a href="#" class="google">
-                      <span class="icon-google mr-3"></span> 
+                      <span class="icon-google mr-1"></span> 
                     </a>
                   </div>
                 </form>
