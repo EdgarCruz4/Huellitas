@@ -57,8 +57,8 @@
                   <span class="d-block text-center my-4 text-muted"> O inicia sesión con Googlge</span>
                   
                   <div class="social-login text-center">
-                    <a href="#" class="google">
-                      <span class="icon-google mr-1"></span> 
+                    <a href="#" class="facebook">
+                      <span class="icon-facebook mr-3"></span> 
                     </a>
                   </div>
                 </form>

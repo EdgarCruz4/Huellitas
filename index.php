@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 
 <head>
   <meta charset="utf-8">
@@ -44,7 +44,10 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
-        <h1 class="text-light"><a href="index.html"><span>Refugio Huellitas</span></a></h1>
+        <div class="row">
+          <div class="col"><img src="assets/img/Logo_01.png" class="img-fluid" alt=""></div>
+          <div class="col"><h1 class="text-light"><a href="index.html"><span>Huellitas</span></a></h1></div>
+        </div>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
