@@ -4,7 +4,7 @@ body {
 background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #C4E0E5, #4CA1AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
+ 
 p {
   color: #b3b3b3;
   font-weight: 300; }
@@ -206,7 +206,7 @@ h2 {
   transform: translate(-50%, -50%); }
 
 .control--checkbox input:disabled ~ .control__indicator:after {
-  border-color: #7b7b7b; }
+  border-color: #b31717; }
 
 .control--checkbox input:disabled:checked ~ .control__indicator {
   background-color: #7e0cf5;

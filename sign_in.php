@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="assets/css/login.css">
 
     <title>Sign in</title>
-  </head>
+  </head> 
   <body>
   
 
@@ -69,7 +69,7 @@
                     <span class="ml-auto"><a href="index.php" class="forgot-pass">Regresa a la pagina de inicio</a></span> 
                   </div>
 
-                  <span class="d-block text-center my-4 text-muted"> O inicia sesión con Googlge</span>
+                  <span class="d-block text-center my-4 text-muted"> O inicia sesión con Facebook</span>
                   
                   <div class="social-login text-center">
                     <a href="#" class="facebook">
