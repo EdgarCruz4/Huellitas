@@ -43,7 +43,7 @@ h6,
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #0072ed;
+  background: #0785DB;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -174,7 +174,7 @@ h6,
 
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
-  color: rgb(0, 0, 0);
+  color: #000000;
   background: #76C5FA;
 }
 
@@ -518,6 +518,22 @@ section {
   font-family: Cambria;
 }
 
+/*boton final*/
+.button{
+  background: #0785DB;
+  color: #ffffff;
+  padding: 10px 25px;
+  margin-left: 30px;
+  border-radius: 50px;
+  font-family: Arial;
+}
+.button:hover,
+.button:focus:hover {
+  color: #000000;
+  background: #76C5FA;
+}
+
+/*barras*/
 .section-title p::after {
   content: "";
   position: relative;
@@ -528,6 +544,7 @@ section {
   bottom: 0;
   left: calc(50% - 50px);
 }
+
 @media only screen and (min-width: 370px) and (max-width: 1000px){
   .section-title p{
     font-size: 2.1em;
