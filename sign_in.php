@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="assets/css/login.css">
 
     <title>Sign in</title>
-  </head>
+  </head> 
   <body>
   
 
@@ -35,7 +35,7 @@
                 <div class="mb-5" align="center">
                   <h3>Registrate en <strong>Huellitas</strong></h3>
                 </div>
-                <form action="php/consultas/addUsuario.php" method="POST">
+                <form action="#" method="POST" id="formularioDts">
                   <div class="form-group first">
                     <label for="username">Nombre del usuario</label>
                     <input type="text" name="nombre" class="form-control" id="username" required>
@@ -48,32 +48,35 @@
 
                   <div class="form-group last mb-4">
                     <label for="numero">Numero Telefonico</label>
-                    <input type="text" class="form-control" id="apellido" max="10" min="10" required>
+                    <input type="text" name="telefono" class="form-control" id="numero" max="10" min="10" required>
                   </div>
 
                   <div class="form-group last mb-4">
-                    <label for="direccion">Dirección</label>
-                    <input type="text" class="form-control" id="direccions" required>
+                    <label for="direccions">Dirección</label>
+                    <input type="text" name="direccion" class="form-control" id="direccions" required>
+                  </div>
+
+                  <div class="form-group last mb-4">
+                    <label for="email">Correo electronico</label>
+                    <input type="email" name="email" class="form-control" id="email" required>
                   </div>
 
                   <div class="form-group last mb-4">
                     <label for="password">Contraseña</label>
-                    <input type="password" class="form-control" id="password" required>
+                    <input type="password" name="password" class="form-control" id="password" required>
                   </div>
 
                   <div class="mb-3 mt-5">
-                    <button type="submit"class="btn btn-pill text-white btn-block btn-primary"></button>
+                    <button type="submit"class="btn btn-pill text-white btn-block btn-primary" id="btnRegistrar">Sign in</button>
                   </div>
 
                   <div class="d-flex mb-4 align-items-center">
                     <span class="ml-auto"><a href="index.php" class="forgot-pass">Regresa a la pagina de inicio</a></span> 
                   </div>
-
-                  <span class="d-block text-center my-4 text-muted"> O inicia sesión con Googlge</span>
-                  
+                  <span class="d-block text-center my-4 text-muted"> O inicia sesión con Facebook</span>
                   <div class="social-login text-center">
-                    <a href="#" class="google">
-                      <span class="icon-google mr-3"></span> 
+                    <a href="#" class="facebook">
+                      <span class="icon-facebook mr-3"></span>
                     </a>
                   </div>
                 </form>
@@ -92,5 +95,8 @@
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/login.js"></script>
+    <script src="develop/js/scriptsFB.js"></script>
+    <script src="develop/js/sign_in.js"></script>
+
   </body>
 </html>
