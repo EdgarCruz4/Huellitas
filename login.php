@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html lang="en"> 
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
+    <meta charset="utf-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
 
@@ -54,11 +54,11 @@
                     <span class="ml-auto"><a href="index.php" class="forgot-pass">Regresa a la pagina de inicio</a></span> 
                   </div>
 
-                  <span class="d-block text-center my-4 text-muted"> O inicia sesión con Googlge</span>
+                  <span class="d-block text-center my-4 text-muted"> O inicia sesión con Facebook</span>
                   
                   <div class="social-login text-center">
-                    <a onclick="onLogFB();" href="#" class="google">
-                      <span class="icon-google mr-1"></span> 
+                    <a href="#" class="facebook">
+                      <span class="icon-facebook mr-3"></span> 
                     </a>
                   </div>
                 </form>
