@@ -35,7 +35,7 @@
                 <div class="mb-5" align="center">
                   <h3>Inicia sesión en <strong>Huellitas</strong></h3>
                 </div>
-                <form action="#" method="post">
+                <form action="#" method="post" id="formularioDts">
                   <div class="form-group first">
                     <label for="correo">Correo</label>
                     <input type="text" class="form-control" id="correo" required>
@@ -77,5 +77,8 @@
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/login.js"></script>
+    <script src="develop/js/cookies.js"></script>
+    <script src="develop/js/scriptsFB.js"></script>
+    <script src="develop/js/login.js"></script>
   </body>
 </html>
