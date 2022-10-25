@@ -35,7 +35,7 @@
                 <div class="mb-5" align="center">
                   <h3>Inicia sesión en <strong>Huellitas</strong></h3>
                 </div>
-                <form action="#" method="post" id="formularioDts">
+                <form action="#" method="post">
                   <div class="form-group first">
                     <label for="correo">Correo</label>
                     <input type="text" class="form-control" id="correo" required>
@@ -46,12 +46,12 @@
                     <input type="password" class="form-control" id="password" required>
                   </div>
 
-                  <div class="mb-3 mt-5">
-                    <input type="submit" value="Log In" class="btn btn-pill text-white btn-block btn-primary">
+                  <div class="mb-3 mt-5 button" >
+                    <button type="submit">Iniciar sesión</button>
                   </div>
 
                   <div class="d-flex mb-4 align-items-center">
-                    <span class="ml-auto"><a href="index.php" class="forgot-pass">Regresa a la pagina de inicio</a></span> 
+                    <span class="ml-auto"><a href="index.php" class="forgot-pass">Regresar a la página inicio</a></span> 
                   </div>
 
                   <span class="d-block text-center my-4 text-muted"> O inicia sesión con Facebook</span>
@@ -77,8 +77,5 @@
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/login.js"></script>
-    <script src="develop/js/cookies.js"></script>
-    <script src="develop/js/scriptsFB.js"></script>
-    <script src="develop/js/login.js"></script>
   </body>
 </html>
