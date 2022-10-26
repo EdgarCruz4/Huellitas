@@ -16,6 +16,9 @@
     <!-- Style -->
     <link rel="stylesheet" href="assets/css/login.css">
 
+    <!-- Favicons -->
+    <link href="assets/img/logo_02.png" rel="icon">
+
     <title>Sign in</title>
   </head> 
   <body>
@@ -35,12 +38,12 @@
                 </div>
                 <form action="#" method="POST" id="formularioDts">
                   <div class="form-group first">
-                    <label for="username">Nombre del usuario</label>
+                    <label for="username">Nombre</label>
                     <input type="text" name="nombre" class="form-control" id="username" required>
                   </div class="mb-4">
 
                   <div class="form-group last mb-4">
-                    <label for="apellido">Apellido</label>
+                    <label for="apellido">Apellidos</label>
                     <input type="text" name="apellido" class="form-control" id="apellido" required>
                   </div>
 

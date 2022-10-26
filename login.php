@@ -16,6 +16,9 @@
     <!-- Style -->
     <link rel="stylesheet" href="assets/css/login.css">
 
+    <!-- Favicons -->
+     <link href="assets/img/logo_02.png" rel="icon">
+
     <title>Login</title>
   </head>
   <body>
