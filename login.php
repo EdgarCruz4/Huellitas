@@ -20,8 +20,6 @@
   </head>
   <body>
   
-
-  
   <div class="content">
     <div class="container">
       <div class="row justify-content-center">
@@ -50,7 +48,7 @@
                     <button type="submit">Iniciar sesión</button>
                   </div>
 
-                  <div class="d-flex mb-4 align-items-center">
+                  <div class="d-flex mb-4 align-items-center"> 
                     <span class="ml-auto"><a href="index.php" class="forgot-pass">Regresar a la página inicio</a></span> 
                   </div>
 

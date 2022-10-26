@@ -138,7 +138,7 @@
         </div>
 
         <div class="section-title mt-2 mb-5" data-aos="fade-up">
-          <a class="button">¿Deseas conocer más?</a>
+          <a class="button" href="donadores.php">¿Deseas conocer más?</a>
         </div>
       </div>
     </section><!-- End Clients Section -->
