@@ -40,6 +40,11 @@ formulario.addEventListener('submit',e=>{
     let pas = document.getElementById('password').value;
     let dir = document.getElementById('direccions').value;
     let num = document.getElementById('numero').value;
+    let valoresAceptados = /^[0-9]+$/;
+    if (num.match(valoresAceptados)){}else{
+        alert("Ingrese un numero de telefono valido");
+        return;
+    }
     $.post('develop/php/addUsuario.php',{
         nombre:nom,
         apellido:ape,
@@ -49,7 +54,6 @@ formulario.addEventListener('submit',e=>{
         telefono:num
     },function(data){
         if (data!=null) {
-            console.log(data);
             if (data == "preRegistrado") {
                 alert('El usuario ya ha sido registrado');
                 window.location= 'login.php';
