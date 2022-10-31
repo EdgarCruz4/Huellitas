@@ -510,8 +510,10 @@ section {
 }
 .section-title .pregunta{
   padding-bottom: 15px;
-  margin-bottom: 15px;
-  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px 25px;
+  width: fit-content;
   font-size: 1.9em;
   font-weight: 700;
   color: #000000;
@@ -523,26 +525,17 @@ section {
   background: #0785DB;
   color: #ffffff;
   padding: 10px 25px;
-  margin-left: 30px;
+  width: fit-content;
+  margin: 0 auto;
   border-radius: 50px;
   font-family: Arial;
+  
 }
 .button:hover,
 .button:focus:hover {
   color: #000000;
   background: #76C5FA;
-}
-
-/*barras*/
-.section-title p::after {
-  content: "";
-  position: relative;
-  display: block;
-  width: 100px;
-  height: 2px;
-  background:  #0785DB;
-  bottom: 0;
-  left: calc(50% - 50px);
+  text-align: center;
 }
 
 @media only screen and (min-width: 370px) and (max-width: 1000px){

@@ -5,23 +5,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="assets/fonts/icomoon/style.css">
-
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    
     <!-- Style -->
     <link rel="stylesheet" href="assets/css/login.css">
-
+    <!-- Favicons -->
+    <link href="assets/img/logo_02.png" rel="icon">
     <title>Sign in</title>
   </head> 
   <body>
-  
-
-  
   <div class="content">
     <div class="container">
       <div class="row justify-content-center">
@@ -37,39 +31,33 @@
                 </div>
                 <form action="#" method="POST" id="formularioDts">
                   <div class="form-group first">
-                    <label for="username">Nombre del usuario</label>
+                    <label for="username">Nombre</label>
                     <input type="text" name="nombre" class="form-control" id="username" required>
                   </div class="mb-4">
-
                   <div class="form-group last mb-4">
-                    <label for="apellido">Apellido</label>
+                    <label for="apellido">Apellidos</label>
                     <input type="text" name="apellido" class="form-control" id="apellido" required>
                   </div>
-
                   <div class="form-group last mb-4">
                     <label for="numero">Numero Telefonico</label>
                     <input type="text" name="telefono" class="form-control" id="numero" max="10" min="10" required>
                   </div>
-
                   <div class="form-group last mb-4">
                     <label for="direccions">Dirección</label>
                     <input type="text" name="direccion" class="form-control" id="direccions" required>
                   </div>
-
                   <div class="form-group last mb-4">
                     <label for="email">Correo electronico</label>
                     <input type="email" name="email" class="form-control" id="email" required>
                   </div>
-
                   <div class="form-group last mb-4">
                     <label for="password">Contraseña</label>
                     <input type="password" name="password" class="form-control" id="password" required>
                   </div>
-
-                  <div class="mb-3 mt-5">
-                    <button type="submit"class="btn btn-pill text-white btn-block btn-primary" id="btnRegistrar">Sign in</button>
+                  <div>
+                    <button class="button" type="submit">Registrate</button>
                   </div>
-
+                  </br>
                   <div class="d-flex mb-4 align-items-center">
                     <span class="ml-auto"><a href="index.php" class="forgot-pass">Regresa a la pagina de inicio</a></span> 
                   </div>
@@ -83,20 +71,15 @@
               </div>
             </div>
           </div>
-          
         </div>
-        
       </div>
     </div>
   </div>
-
-  
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/login.js"></script>
     <script src="develop/js/scriptsFB.js"></script>
     <script src="develop/js/sign_in.js"></script>
-
   </body>
 </html>
