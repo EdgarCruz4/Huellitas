@@ -1,4 +1,5 @@
 <?php
+//Se encarga de hacer la conexion a la bass de datos
 date_default_timezone_set('America/Mexico_City');
 $dsn = 'mysql:dbname=huellitas;host=localhost;charset=utf8';
 $servername = "localhost";

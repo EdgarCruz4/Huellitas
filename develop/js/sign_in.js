@@ -1,50 +1,61 @@
-
+//Esta funcion permite iniciar sesion a partir del boton de facebook
 function onLoginFB() {
-FB.login((response) => {
-    if (response.authResponse) {
-        FB.api('/me?fields=id,email,first_name,last_name', (response) => {
-
-            $.post('develop/php/addUserFB.php',response,function(data){
-                if (data!=null) {
-                    console.log(data);
-                    if (data == "preRegistrado") {
-                        alert('El usuario ya ha sido registrado');
-                        window.location= 'login.php';
-                    } else if (data == "registrado") {
-                        alert('Usuario registrado con exito');
-                        window.location= 'login.php';
-                    } else {
+    //Se esta haciendo uso de la api de facebook, los scripts de la api estan en scriptsFB.js
+    FB.login((response) => {
+        if (response.authResponse) {
+            //Se obtienen los datos del perfil de facebook
+            FB.api('/me?fields=id,email,first_name,last_name', (response) => {
+                //Los datos son enviados a develop/php/addUserFB.php para ser procesados 
+                $.post('develop/php/addUserFB.php',response,function(data){
+                    //Aqui se obtiene la respuesta 
+//Si el proceso fue un exito los datos obtenidos son enviados a la funcion de loginLS(id,nom,jer) en cookies.js
+                    if (data!=null) {
+                        console.log(data);
+                        if (data == "preRegistrado") {
+                            alert('El usuario ya ha sido registrado');
+                            window.location= 'login.php';
+                        } else if (data == "registrado") {
+                            alert('Usuario registrado con exito');
+                            window.location= 'login.php';
+                        }
+// en caso de que haya ocurrido un error este sera notificado 
+                        else {
+                            alert('Ha ocurrido un error, intetelo mas tarde');
+                            window.location= 'index.php';                        
+                        }
+                    }else{
                         alert('Ha ocurrido un error, intetelo mas tarde');
-                        window.location= 'index.php';                        
+                        window.location= 'index.php';
                     }
-                }else{
-                    alert('Ha ocurrido un error, intetelo mas tarde');
-                    window.location= 'index.php';
-                }
-            });
+                });
 
-        });
-    }else{
-        alert("Ha ocurrido un error intentelo mas tarde");
-        window.location= 'index.php'
-    }
-});
+            });
+        }else{
+            alert("Ha ocurrido un error intentelo mas tarde");
+            window.location= 'index.php'
+        }
+    });
 }
 
+
+//Este fagmento de codigo es el que le da funcionalidad al formulario de la vista sign_in
 let formulario = document.getElementById('formularioDts');
 formulario.addEventListener('submit',e=>{
     e.preventDefault();
+    //Se obtinen los datos del formulario 
     let nom = document.getElementById('username').value;
     let ape = document.getElementById('apellido').value;
     let ema = document.getElementById('email').value;
     let pas = document.getElementById('password').value;
     let dir = document.getElementById('direccions').value;
     let num = document.getElementById('numero').value;
+    //Se encarga de verificar que la cadena de caracteres del campo telefono sea correcta
     let valoresAceptados = /^[0-9]+$/;
     if (num.match(valoresAceptados)){}else{
         alert("Ingrese un numero de telefono valido");
         return;
     }
+    //Los datos son enviados a develop/php/addUsuario.php para ser procesados 
     $.post('develop/php/addUsuario.php',{
         nombre:nom,
         apellido:ape,
@@ -54,13 +65,17 @@ formulario.addEventListener('submit',e=>{
         telefono:num
     },function(data){
         if (data!=null) {
+            //Aqui se obtiene la respuesta 
+//Si el proceso fue un exito los datos obtenidos son enviados a la funcion de loginLS(id,nom,jer) en cookies.js
             if (data == "preRegistrado") {
                 alert('El usuario ya ha sido registrado');
                 window.location= 'login.php';
             } else if (data == "registrado") {
                 alert('Usuario registrado con exito');
                 window.location= 'login.php';
-            } else {
+            }             
+// en caso de que haya ocurrido un error este sera notificado
+            else {
                 alert('Ha ocurrido un error, intetelo mas tarde');
                 window.location= 'index.php';                        
             }
@@ -71,68 +86,3 @@ formulario.addEventListener('submit',e=>{
     });
 });
 
-
-
-/*
-
-    $.post('develop/php/addUsuario.php',{
-        nombre:document.getElementById('username'),
-        apellido:document.getElementById('apellido'),
-        email:document.getElementById('email'),
-        password:document.getElementById('password'),
-        direccion:document.getElementById('direccions'),
-        telefono:document.getElementById('numero')
-    },function(data){
-        if (data!=null) {
-            console.log(data);
-        }else{
-            alert('Ha ocurrido un error, intetelo mas tarde');
-            window.location= 'index.php';
-        }
-    });
-
-
-
-$("#btnRegistrar").click(function () {
-    console.log("btn click");
-});
-
-            console.log(response);
-            console.log("nombre: "+response.first_name);
-            var nombrefb = response.first_name;
-            var apellidofb = response.last_name;
-            var idfb = response.id;
-            console.log(
-                'nombre: '+nombrefb+
-                '\napellido: '+apellidofb+
-                '\nid: '+idfb
-            );
-
-            $.ajax({
-                url:'develop/php/addUserFB.php',
-                method:'POST',
-                data:{
-                    nombre:nombrefb,
-                    apellido:apellidofb,
-                    id:idfb
-                }
-            }).done(function(respuesta){
-                var insertRespuesta = JSON.parse(respuesta);
-                console.log("respuesta: "+insertRespuesta);
-                console.log("despues de la consulta");
-            });
-
-
-            fetch('develop/php/addUserFB.php',{
-                method:'POST',
-                body:{
-                    nombre:nombrefb,
-                    apellido:apellidofb,
-                    id:idfb
-                }
-            })
-                .then(respuesta => respuesta.json())
-                .then(data=>{
-                    console.log('respueta'+data);
-                }).catch(error => console.log('error'+error));
-*/
