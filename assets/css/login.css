@@ -24,6 +24,26 @@ a {
   padding: 7rem 0;
 }
 
+
+/*Boton final*/
+.button{
+  background: #0785DB;
+  border: #0785DB;
+  color: #ffffff;
+  padding: 10px 25px;
+  margin: 0 auto;
+  border-radius: 50px;
+  font-family: Arial;
+  display: flex;
+}
+.button:hover,
+.button:focus:hover {
+  color: #000000;
+  background: #76C5FA;
+  font-family: Arial;
+  display: flex;
+}
+
 h2 {
   font-size: 20px; }
 
@@ -211,3 +231,4 @@ h2 {
 .control--checkbox input:disabled:checked ~ .control__indicator {
   background-color: #7e0cf5;
   opacity: .2; }
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Refugio Huellitas</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo_02.png" rel="icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/donadores.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <div class="row">
+          <div class="col"><img src="assets/img/Logo_01.png" class="img-fluid" alt=""></div>
+          <div class="col"><h1 class="text-light"><a href="index.html"><span>Huellitas</span></a></h1></div>
+        </div>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="getstarted scrollto" href="sign_in.php">Registrate</a></li>
+          <li><a class="getstarted scrollto" href="login.php">Inicio de sesión</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+        <div class="section-title">
+          <br>
+          <p class="subtitulo">¿Como puedes ayudar?</p>
+        </div>
+        <img src="assets/img/perroygato.jpg" class="img-fluid" alt="">
+        <div class="portfolio-wrap">
+            <p class="texto" alt="" style="height:100%; width:100%;">Nuetro refugio se dedica</p>
+        </div>
+   
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <p><h5>Todos los Derechos Reservados. México 2022</h5></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  
+  
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>
