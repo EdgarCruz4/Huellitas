@@ -3,6 +3,5 @@ function loginLS(id,nom,jer){
     localStorage.setItem("id",id);
     localStorage.setItem("nombre",nom);
     localStorage.setItem("jerarquia",jer);
-    // y esta solo es la respuesta que ni se usa
     return "Items creados correctamente\n"+localStorage.getItem("id")+"\n"+localStorage.getItem("nombre")+"\n"+localStorage.getItem("jerarquia");
 }
