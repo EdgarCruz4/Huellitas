@@ -73,29 +73,32 @@
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-6 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-6 col-md-6 portfolio-item filter-app" style="height:375px">
+            <div class="section-title">
+            <p class="subtitulo"> PERROS EN ADOPCIÓN </p>
+            </div>
             <div class="portfolio-wrap">
               <img src="assets/img/perros/perro.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                <a href="catalogop.php" title="More Details"><i class="bi bi-link" ></i></a>
               </div>
-              <div class="portfolio-info">
-                <h4>Caninos</h4>
-                <p>App</p>
+              <div class="portfolio-info" >
+                <h4>Perros</h4>
               </div>
             </div>
           </div>
 
           <div class="col-lg-6 col-md-6 portfolio-item filter-app" style="height:375px">
+            <div class="section-title">
+            <p class="subtitulo"> GATOS EN ADOPCIÓN </p>
+            </div>
             <div class="portfolio-wrap">
               <img src="assets/img/gatos/gato.jpg" class="img-fluid" alt="" style="height:100%; width:100%;">
               <div class="portfolio-links">
-                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                <a href="catalogog.php" title="More Details"><i class="bi bi-link"></i></a>
               </div>
               <div class="portfolio-info">
-                <h4>Felinos</h4>
-                <p>App</p>
+                <h4>Gatos</h4>
               </div>
             </div>
           </div>
