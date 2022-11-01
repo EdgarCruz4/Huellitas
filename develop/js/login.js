@@ -2,7 +2,7 @@
 let formulario = document.getElementById('formularioDts');
 formulario.addEventListener('submit',e=>{
     e.preventDefault();
-    //Se obtinen los datos del formulario 
+    //Se obtinen los datos del formulario
     let ema = document.getElementById('correo').value;
     let pas = document.getElementById('password').value;
     //Los datos son enviados a develop/php/selectLogin.php para ser procesados 
@@ -41,7 +41,6 @@ formulario.addEventListener('submit',e=>{
 //Esta funcion permite iniciar sesion a partir del boton de facebook
 function onLogFB() {
     //Se esta haciendo uso de la api de facebook, los scripts de la api estan en scriptsFB.js
-    console.log("Ejecutando la funcion de login con facebook");
     FB.login((response) => {
         if (response.authResponse) {
             //Se obtienen los datos del perfil de facebook
