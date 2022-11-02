@@ -1,10 +1,11 @@
 <?php 
-
+//Se llama al codigo que zhace la conexion a la base de datos
 require("../conexion.php");
-
+//Se obtinen los datos
 $email=$_POST['email'];
 $upassword=$_POST['password'];
 $retorno = array();
+//Se obtinen los datos
 $event ="SELECT correo, contraseña, concat_ws(' ', nombre, apellido) as nombre, jerarquia, id FROM usuario WHERE correo = :correo";
 $eventRow=['correo'=>$email];
 $eventQuery = $pcn->prepare($event);

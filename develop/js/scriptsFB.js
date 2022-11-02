@@ -1,3 +1,5 @@
+//Este es el script de la api de facebook
+//Este script es necesario para las funciones para iniciar sesion con facebook
 
 window.fbAsyncInit = function() {
     FB.init({
