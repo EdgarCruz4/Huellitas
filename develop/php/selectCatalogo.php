@@ -54,6 +54,7 @@ if($mascotasQuery->execute($mascotasRow)){
                         'color'=>$rowMts['color'],
                         'raza'=>$rowMts['raza'],
                         'sexo'=>$rowMts['sexo'],
+                        'foto'=>$rowMts['foto'],
                         'vacunas'=>$arrV
                     ]);
                     unset($arrV);
