@@ -38,7 +38,7 @@
       <div class="logo">
         <div class="row">
           <div class="col"><img src="assets/img/Logo_01.png" class="img-fluid" alt=""></div>
-          <div class="col"><h1 class="text-light"><a href="index.html"><span>Huellitas</span></a></h1></div>
+          <div class="col"><h1 class="text-light"><a href="index.php"><span>Huellitas</span></a></h1></div>
         </div>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
@@ -59,44 +59,42 @@
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
-
             <div class="section-title mt-3 mb-5">
                  <p>CONOCE A NUESTROS PERRITOS</p>
             </div>
 
         <div class="container" >
-
-            <div >
+          <div >
                 <div>
-                    <img class="img" src="assets/img/perros/Perro_01.png" class="img-fluid" alt="">
+                    <img class="img" src="assets/img/perros/Perro_01.png" >
                 </div>
-                <p class="text"> Snoopy </p>
+                <p class="text" > Snoopy </p>
 
-                <input type="checkbox" id="btn-modal">
-                <label for="btn-modal" class="lbl-modal">Leer más</label>
-                <div class="modal">
-                    <div class="contenedor">
-                        <header>Datos de la mascota</header>
-                        <label for="btn-modal">X</label>
-                        <div class="contenido">
-                            <p>
-                            Nombre de la mascota:
-                            </br>Edad:
-                            </br>Peso:
-                            </br>Color:
-                            </br>Raza:
-                            </br>Sexo:
-                            </p>
-                            </br>
-                            <form >
-                                <input  type="button" value="Adoptar" onclick="confirmar();">
-                            </form> 
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    <input type="checkbox" id="btn-modal">
+                    <label for="btn-modal" class="lbl-modal">Leer más</label>
+                    <div class="modal">
+                      <div class="contenedor">
+                          <header>Datos de la mascota</header>
+                          <label for="btn-modal">X</label>
+                            <div class="contenido">
+                                  <p>
+                                  Nombre de la mascota: Snoopy
+                                  </br>Edad: 2 años
+                                  </br>Peso: kg
+                                  </br>Color: Café con manchas negras y blancas
+                                  </br>Raza: Beagle
+                                  </br>Sexo: Macho
+                                  </p>
+                                  </br>
+                                  <form >
+                                      <input type="button" value="Adoptar"  onclick="confirmar();">
+                                  </form> 
+                            </div>
+                      </div>
+              </div>
+          </div>
 
-            <div >
+          <div >
                 <div>
                     <img class="img" src="assets/img/perros/Perro_02.png" class="img-fluid" alt="">
                 </div>
@@ -106,7 +104,7 @@
                 <label for="btn-modal" class="lbl-modal">Leer más</label>
                 <div class="modal">
                     <div class="contenedor">
-                        <header></header>
+                    <header>Datos de la mascota</header>
                         <label for="btn-modal">X</label>
                         <div class="contenido">
                             <p>
@@ -124,9 +122,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+          </div>
 
-            <div >
+          <div >
                 <div>
                     <img class="img" src="assets/img/perros/Perro_03.png" class="img-fluid" alt="">
                 </div>
@@ -136,7 +134,7 @@
                 <label for="btn-modal" class="lbl-modal">Leer más</label>
                 <div class="modal">
                     <div class="contenedor">
-                        <header></header>
+                    <header>Datos de la mascota</header>
                         <label for="btn-modal">X</label>
                         <div class="contenido">
                             <p>
@@ -154,9 +152,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+          </div>
 
-            <div >
+          <div >
                 <div>
                     <img class="img" src="assets/img/perros/Perro_04.png" class="img-fluid" alt="">
                 </div>
@@ -166,7 +164,7 @@
                 <label for="btn-modal" class="lbl-modal">Leer más</label>
                 <div class="modal">
                     <div class="contenedor">
-                        <header></header>
+                    <header>Datos de la mascota</header>
                         <label for="btn-modal">X</label>
                         <div class="contenido">
                             <p>
@@ -184,14 +182,14 @@
                         </div>
                     </div>
                 </div>
-            </div>
+          </div>
 
         </div>
     </section><!-- End Portfolio Section -->
     
 </br>
 
-  </main><!-- End #main -->
+</main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">

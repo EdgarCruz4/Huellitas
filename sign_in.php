@@ -27,7 +27,7 @@
             <div class="col-md-12">
               <div class="form-block">
                 <div class="mb-5" align="center">
-                  <h3>Registrate en <strong>Huellitas</strong></h3>
+                  <h3>Regístrate en <strong>Huellitas</strong></h3>
                 </div>
                 <form action="#" method="POST" id="formularioDts">
                   <div class="form-group first">
@@ -55,7 +55,7 @@
                     <input type="password" name="password" class="form-control" id="password" required>
                   </div>
                   <div>
-                    <button class="button" type="submit">Registrate</button>
+                    <button class="button" type="submit">Regístrate</button>
                   </div>
                   </br>
                   <div class="d-flex mb-4 align-items-center">
