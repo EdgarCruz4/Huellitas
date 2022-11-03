@@ -168,20 +168,20 @@ window.onload=function() {
 
 
 function confirmar(idM){
-    //Se confirma si decea continuar con el proceso
-    if (confirm("Favor de confirmar adopción")) {
-        //Se verifica si la sesion se ha iniciado
-        if (localStorage.getItem("id")) {
+    //Se verifica si la sesion se ha iniciado
+    if (localStorage.getItem("id")) {
+            //Se confirma si decea continuar con el proceso
+        if (confirm("Favor de confirmar adopción")) {
             //si sí se hace la adopcion
             let idU = localStorage.getItem("id");
             adoptar(idM,idU);
-        }else{
-            //si no se reedirecciona a la pantalla de login.php
-            alert("Es encesario inciar sesión para continuar con el proceso");
-            window.location= 'login.php';
+        } else {
+            window.location.reload();
         }
-    } else {
-        window.location.reload();
+    }else{
+        //si no se reedirecciona a la pantalla de login.php
+        alert("Es necesario inciar sesión para continuar con el proceso");
+        window.location= 'login.php';
     }
 }
 
