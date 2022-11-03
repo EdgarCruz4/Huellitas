@@ -171,9 +171,9 @@ function confirmar(idM){
     //Se confirma si decea continuar con el proceso
     if (confirm("Favor de confirmar adopción")) {
         //Se verifica si la sesion se ha iniciado
-        if (sessionStorage.getItem("id")) {
+        if (localStorage.getItem("id")) {
             //si sí se hace la adopcion
-            let idU = sessionStorage.getItem("id");
+            let idU = localStorage.getItem("id");
             adoptar(idM,idU);
         }else{
             //si no se reedirecciona a la pantalla de login.php
