@@ -196,8 +196,7 @@ function adoptar(idMascota,idUsuario) {
                 var insertRespuesta = JSON.parse(data);
                 //Si el proceso fue un exito los datos obtenidos son enviados a la funcion de loginLS(id,nom,jer) en cookies.js
                 if (insertRespuesta.response == "SUCCESS") {
-                    alert(insertRespuesta.detail);
-                    window.location= 'index.php'; 
+                    window.location= 'adopcion.php'; 
                 }
 // en caso de que haya ocurrido un error este sera notificado 
                 else {
