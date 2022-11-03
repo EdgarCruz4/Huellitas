@@ -38,7 +38,7 @@
       <div class="logo">
         <div class="row">
           <div class="col"><img src="assets/img/Logo_01.png" class="img-fluid" alt=""></div>
-          <div class="col"><h1 class="text-light"><a href="index.html"><span>Huellitas</span></a></h1></div>
+          <div class="col"><h1 class="text-light"><a href="index.php"><span>Huellitas</span></a></h1></div>
         </div>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
@@ -80,7 +80,7 @@
                             Nombre de la mascota:
                             </br>Edad:
                             </br>Peso:
-                            </br>Color:
+                            </br>Color: rosa
                             </br>Raza:
                             </br>Sexo:
                             </p>
@@ -140,12 +140,12 @@
                         <label for="btn-modal">X</label>
                         <div class="contenido">
                             <p>
-                            </br>Nombre de la mascota:
-                            </br>Edad:
-                            </br>Peso:
-                            </br>Color:
-                            </br>Raza:
-                            </br>Sexo:
+                            </br>Nombre de la mascota: roky
+                            </br>Edad: 5
+                            </br>Peso: 6
+                            </br>Color: blanco
+                            </br>Raza: gato
+                            </br>Sexo: macho
                             </p>
                             </br>
                             <form >
@@ -170,12 +170,12 @@
                         <label for="btn-modal">X</label>
                         <div class="contenido">
                             <p>
-                            </br>Nombre de la mascota:
-                            </br>Edad:
-                            </br>Peso:
-                            </br>Color:
-                            </br>Raza:
-                            </br>Sexo:
+                            </br>Nombre de la mascota: daisy
+                            </br>Edad: 5
+                            </br>Peso:4
+                            </br>Color:negro
+                            </br>Raza:gato
+                            </br>Sexo:hembra
                             </p>
                             </br>
                             <form >

@@ -42,8 +42,14 @@
                       <button class="button" type="submit" >Iniciar sesión</button>
                     </div>
                     </br>
+                    <div class="d-flex mb-4 align-items-center">
+                      <span class="ml-auto"><a href="index.php" class="forgot-pass">Regresar a la página de inicio</a></span>
+<!--                 
+                      <span class="ml-auto"><a href="sign_in.php" class="forgot-pass">¿Aún no tienes una cuenta? Registrate aquí</a></span> 
+                    </div>
                     <div class="d-flex mb-4 align-items-center"> 
                       <span class="ml-auto"><a href="index.php" class="forgot-pass">Regresar a la página inicio</a></span> 
+-->
                     </div>
                     <span class="d-block text-center my-4 text-muted"> O inicia sesión con Facebook</span>
                     <div class="social-login text-center">

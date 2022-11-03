@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Refugio Huellitas</title>
+  <title>Nuestras mascotas en adopción</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
   <!-- Animate On Scroll Library -->
@@ -21,7 +21,7 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <!-- Template Main CSS File -->
-  <link href="assets/css/donadores.css" rel="stylesheet">
+  <link href="assets/css/catalogos.css" rel="stylesheet">
   <!-- =======================================================
   * Template Name: Ninestars - v4.9.1
   * Template URL: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/
@@ -34,6 +34,7 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
+
       <div class="logo">
         <div class="row">
           <div class="col"><img src="assets/img/Logo_01.png" class="img-fluid" alt=""></div>
@@ -45,7 +46,7 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="getstarted scrollto" href="sign_in.php">Regístrate</a></li>
+          <li><a class="getstarted scrollto" href="sign_in.php">Registrate</a></li>
           <li><a class="getstarted scrollto" href="login.php">Inicio de sesión</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -54,36 +55,23 @@
     </div>
   </header><!-- End Header -->
 
-
-  
   <main id="main">
-</br>
-    <div class="section-title">
-                <p>"Donaciones para el refugio"</p>
-            </div>
-  
-      <div class="container"> 
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+        <div class="section-title mt-3 mb-5">
+             <p id="encbz"></p>
+        </div>
+
+        <div id="divContainer" class="container">
+
         
-          <img class="imag" src="assets/img/perroygato.jpg">
-        
-          <div class="subtitulo">
-          <h2> ¿Cómo puedes ayudar? </h2></div>
+        </div>
+    </section><!-- End Portfolio Section -->
     
-        </br>
-          <div class="text">
-          <p >
-             Puedes acudir a nuestra sucursal ubicada en Ixmiquilpan, Hgo.
-              en un horario de 9:00am a 6:00pm.
-               </br>Tus donaciones pueden ser en especie (alimento, juguetes, cepillos, etc.)
-             o de forma monetaria
-          </p></div>
-      </div>  
+
+
+
   </main><!-- End #main -->
-</br>
-</br>
-</br>
-</br>
-</br>
 </br>
 
   <!-- ======= Footer ======= -->
@@ -106,12 +94,14 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <!-- Vendor JS Files -->
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="develop/js/catalogo.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Refugio Huellitas</title>
+  <title>Adopcion</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
   <!-- Animate On Scroll Library -->
@@ -21,7 +21,7 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <!-- Template Main CSS File -->
-  <link href="assets/css/donadores.css" rel="stylesheet">
+  <link href="assets/css/adopcion.css" rel="stylesheet">
   <!-- =======================================================
   * Template Name: Ninestars - v4.9.1
   * Template URL: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/
@@ -45,7 +45,7 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="getstarted scrollto" href="sign_in.php">Regístrate</a></li>
+          <li><a class="getstarted scrollto" href="sign_in.php">Registrate</a></li>
           <li><a class="getstarted scrollto" href="login.php">Inicio de sesión</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -56,27 +56,37 @@
 
 
   
-  <main id="main">
+<main id="main">
 </br>
-    <div class="section-title">
-                <p>"Donaciones para el refugio"</p>
-            </div>
+  <div class="adop">
+    <p>
+      <span>F</span>
+      <span>E</span>
+      <span>L</span>
+      <span>I</span>
+      <span>C</span>
+      <span>I</span>
+      <span>D</span>
+      <span>A</span>
+      <span>D</span>
+      <span>E</span>
+      <span>S</span>
+    </p>
+  </div>
+
+      <div class="section-title">
+        <p>"Ahora tienes un nuevo amigo"</p>
+      </div>
   
       <div class="container"> 
-        
-          <img class="imag" src="assets/img/perroygato.jpg">
-        
-          <div class="subtitulo">
-          <h2> ¿Cómo puedes ayudar? </h2></div>
-    
-        </br>
           <div class="text">
-          <p >
-             Puedes acudir a nuestra sucursal ubicada en Ixmiquilpan, Hgo.
-              en un horario de 9:00am a 6:00pm.
-               </br>Tus donaciones pueden ser en especie (alimento, juguetes, cepillos, etc.)
-             o de forma monetaria
-          </p></div>
+            <p >
+              Puedes acudir a recoger a tu nueva mascota en nuestra sucursal 
+            </br>ubicada en Ixmiquilpan, Hgo. en un horario de 9:00am a 6:00pm. 
+            </br>Recuerda llevar tu identificación oficial.
+            </p>
+          </div>
+          <img class="imag" src="assets/img/perrofeliz.png">
       </div>  
   </main><!-- End #main -->
 </br>

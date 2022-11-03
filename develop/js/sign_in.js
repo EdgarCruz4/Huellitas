@@ -51,7 +51,7 @@ formulario.addEventListener('submit',e=>{
     //Se encarga de verificar que la cadena de caracteres del campo telefono sea correcta
     let valoresAceptados = /^[0-9]+$/;
     if (num.match(valoresAceptados)){}else{
-        alert("Ingrese un numero de telefono valido");
+        alert("Ingrese un número de teléfeno valido");
         return;
     }
     //Los datos son enviados a develop/php/addUsuario.php para ser procesados 
