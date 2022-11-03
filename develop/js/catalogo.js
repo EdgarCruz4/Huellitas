@@ -16,12 +16,9 @@ window.onload=function() {
         //Aqui se obtiene la respuesta 
         var insertRespuesta = JSON.parse(data);
         if (insertRespuesta!=null) {
-            console.log(insertRespuesta);
             if (insertRespuesta.response == "OK") {
-                console.log(insertRespuesta.detail);
                 let array = insertRespuesta.detail;
                 array.forEach(row1 => {
-                    console.log(row1);
                     let div0 = document.createElement("div");
                     row1.forEach(row2 => {
                         console.log(row2.nombre);
@@ -48,7 +45,7 @@ window.onload=function() {
                                     </p></br>
                     
                                     <form >
-                                        <input  type="button" value="Adoptar" onclick="confirmar();">
+                                        <input  type="button" value="Adoptar" onclick="confirmar(${row2.idMascota});">
                                     </form>
                     
                                 </div>
@@ -72,8 +69,42 @@ window.onload=function() {
 }
 
 
-function confirmar(){
-    console.log("se hizo click en el btn adoptar");
+function confirmar(idM){
+    if (confirm("Favor de confirmar adopción")) {
+        if (sessionStorage.getItem("id")) {
+            let idU = sessionStorage.getItem("id");
+            adoptar(idM,idU);
+        }else{
+            alert("Es encesario inciar sesión para continuar con el proceso");
+            window.location= 'login.php';
+        }
+    } else {
+        window.location.reload();
+    }
 }
 
-
+function adoptar(idMascota,idUsuario) {
+        //Los datos son enviados a develop/php/addUsuario.php para ser procesados 
+        $.post('develop/php/addAdopciones.php',{
+            id_mascota:idMascota,
+            id_usuario:idUsuario
+        },function(data){
+            if (data!=null) {
+                //Aqui se obtiene la respuesta 
+                var insertRespuesta = JSON.parse(data);
+                //Si el proceso fue un exito los datos obtenidos son enviados a la funcion de loginLS(id,nom,jer) en cookies.js
+                if (insertRespuesta.response == "SUCCESS") {
+                    alert(insertRespuesta.detail);
+                    window.location= 'index.php'; 
+                }
+// en caso de que haya ocurrido un error este sera notificado 
+                else {
+                    alert('Ha ocurrido un error, intetelo mas tarde');
+                    window.location= 'index.php';                        
+                }
+            }else{
+                alert('Ha ocurrido un error, intetelo mas tarde');
+                window.location= 'index.php';
+            }
+        });
+}

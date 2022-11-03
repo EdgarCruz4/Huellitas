@@ -47,7 +47,7 @@ if($mascotasQuery->execute($mascotasRow)){
                         }
                     }
                     array_push($arrMV,[
-                        'id_mascota'=>$rowMts['id'],
+                        'idMascota'=>$rowMts['id'],
                         'nombre'=>$rowMts['nombre'],
                         'edad'=>$rowMts['edad'],
                         'peso'=>$rowMts['peso'],
