@@ -39,7 +39,7 @@
                     <input type="text" name="apellido" class="form-control" id="apellido" required>
                   </div>
                   <div class="form-group last mb-4">
-                    <label for="numero">Numero Telefonico</label>
+                    <label for="numero">Número Telefónico</label>
                     <input type="text" name="telefono" class="form-control" id="numero" max="10" min="10" required>
                   </div>
                   <div class="form-group last mb-4">
@@ -59,7 +59,7 @@
                   </div>
                   </br>
                   <div class="d-flex mb-4 align-items-center">
-                    <span class="ml-auto"><a href="index.php" class="forgot-pass">Regresa a la pagina de inicio</a></span> 
+                    <span class="ml-auto"><a href="index.php" class="forgot-pass">Regresa a la página de inicio</a></span> 
                   </div>
                   <span class="d-block text-center my-4 text-muted"> O inicia sesión con Facebook</span>
                   <div class="social-login text-center">
