@@ -43,7 +43,7 @@
                     </div>
                     </br>
                     <div class="d-flex mb-4 align-items-center"> 
-                      <span class="ml-auto"><a href="index.php" class="forgot-pass">Regresar a la página inicio</a></span> 
+                      <span class="ml-auto"><a href="index.php" class="forgot-pass">Regresar a la página de inicio</a></span> 
                     </div>
                     <span class="d-block text-center my-4 text-muted"> O inicia sesión con Facebook</span>
                     <div class="social-login text-center">

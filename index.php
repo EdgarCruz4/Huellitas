@@ -53,7 +53,7 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="getstarted scrollto" href="sign_in.php">Registrate</a></li>
+          <li><a class="getstarted scrollto" href="sign_in.php">Regístrate</a></li>
           <li><a class="getstarted scrollto" href="login.php">Inicio de sesión</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -114,7 +114,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <p class="subtitulo">Algunos de nuestros provedores</p>
+          <p class="subtitulo">Algunos de nuestros donadores</p>
         </div>
 
         <div class="clients-slider swiper mt-5 mb-5" data-aos="fade-up" data-aos-delay="100"  data-aos="fade-up">
