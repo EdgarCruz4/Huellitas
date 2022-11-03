@@ -47,7 +47,7 @@
                     <input type="text" name="direccion" class="form-control" id="direccions" required>
                   </div>
                   <div class="form-group last mb-4">
-                    <label for="email">Correo electronico</label>
+                    <label for="email">Correo electrónico</label>
                     <input type="email" name="email" class="form-control" id="email" required>
                   </div>
                   <div class="form-group last mb-4">
