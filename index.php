@@ -80,7 +80,7 @@
             <div class="portfolio-wrap">
               <img src="assets/img/perros/perro.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="catalogop.php" title="More Details"><i class="bi bi-link" ></i></a>
+                <a onclick="ctd();" title="More Details"><i class="bi bi-link" ></i></a>
               </div>
               <div class="portfolio-info" >
                 <h4>Perros</h4>
@@ -95,7 +95,7 @@
             <div class="portfolio-wrap">
               <img src="assets/img/gatos/gato.jpg" class="img-fluid" alt="" style="height:100%; width:100%;">
               <div class="portfolio-links">
-                <a href="catalogog.php" title="More Details"><i class="bi bi-link"></i></a>
+                <a onclick="ctc();" title="More Details"><i class="bi bi-link"></i></a>
               </div>
               <div class="portfolio-info">
                 <h4>Gatos</h4>
@@ -173,6 +173,8 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="develop/js/cookies.js"></script>
+  <script src="develop/js/indx.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

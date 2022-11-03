@@ -1,10 +1,10 @@
 <?php
-
+//Se llama al codigo que zhace la conexion a la base de datos
 require("../conexion.php");
-
+//Se obtinen los datos
 $id_usuario=$_POST['id_usuario'];
 $descripcion=$_POST['descripcion'];
-
+//Se realiza el registro
 $addDonacion ="INSERT INTO donaciones
 (id_usuario, descripcion, fechayhora, estatus) 
 VALUES (:usuario, :descripcion, :fechayhora, :estatus)";
