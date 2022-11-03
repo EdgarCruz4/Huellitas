@@ -173,6 +173,7 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="develop/js/cookies.js"></script>
   <script src="develop/js/indx.js"></script>
 
   <!-- Template Main JS File -->

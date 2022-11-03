@@ -1,9 +1,9 @@
 <?php
-
+//Se llama al codigo que zhace la conexion a la base de datos
 require("../conexion.php");
-
+//Se obtinen los datos
 $raza=$_POST['especie'];
-
+//Se hace la consulta para obtener los datos de las mascotas
 $mascotas ="SELECT *
 FROM mascotas 
 WHERE raza = :raza";
@@ -13,6 +13,7 @@ $mascotasRow=[
 $mascotasQuery = $pcn->prepare($mascotas);
 if($mascotasQuery->execute($mascotasRow)){
     $resultMascotas = $mascotasQuery->fetchAll(PDO::FETCH_ASSOC);
+    //Se hace la consulta  que nos otoraga el estatus de cada mascota
     $adopciones ="SELECT id_mascota
     FROM adopciones
     WHERE estatus = :apartado OR estatus = :adoptado";
@@ -23,6 +24,7 @@ if($mascotasQuery->execute($mascotasRow)){
     $adopcionesQuery = $pcn->prepare($adopciones);
     if($adopcionesQuery->execute($adopcionesRow)){
         $resultAdopciones = $adopcionesQuery->fetchAll(PDO::FETCH_ASSOC);
+        //Se hace la consulta para obtener las vacunas de las mascotas
         $vacunas ="SELECT *
         FROM vacunas";
         $vacunasRow=[];
@@ -33,11 +35,14 @@ if($mascotasQuery->execute($mascotasRow)){
             $arrV = array();
             $arrMV = array();
             $arrA = array();
+            //Obtenemos los id´s de las mascotas cuyas adopciones no fueron concretaadas
             foreach ($resultAdopciones as $rowAdpns) {
                 array_push($arrA,$rowAdpns['id_mascota']);
             }
             foreach ($resultMascotas as $rowMts) {
+                //Se obtinen los id´s de las mascotas disponibles para una adopcion
                 if (in_array($rowMts['id'], $arrA)==false){
+                    //Se obtienen las vacunas de la mascota
                     foreach ($resultVacunas as $rowVns) {
                         if ($rowVns['id_mascota'] == $rowMts['id']) {
                             array_push($arrV,[
@@ -46,6 +51,7 @@ if($mascotasQuery->execute($mascotasRow)){
                             ]);
                         }
                     }
+                    //Los datos son ordenados en un arreglo
                     array_push($arrMV,[
                         'idMascota'=>$rowMts['id'],
                         'nombre'=>$rowMts['nombre'],

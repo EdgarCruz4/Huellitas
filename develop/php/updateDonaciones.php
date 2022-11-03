@@ -4,7 +4,6 @@ require("../conexion.php");
 
 $id_adopcion = $_POST["id"];
 $estatus = $_POST["estatus"];
-// aqui verificar mas tarde si se pueden hacer mas de dos actualizaciones ala vez
 $updae ="UPDATE donaciones 
 SET estatus = :estatus, 
 WHERE id = :id";
