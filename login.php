@@ -29,7 +29,7 @@
                   <div class="mb-5" align="center">
                     <h3>Inicia sesión en <strong>Huellitas</strong></h3>
                   </div>
-                  <form action="#" method="post">
+                  <form action="#" method="post" id="formularioDts">
                     <div class="form-group first">
                       <label for="correo">Correo</label>
                       <input type="text" class="form-control" id="correo" required>
@@ -42,12 +42,18 @@
                       <button class="button" type="submit" >Iniciar sesión</button>
                     </div>
                     </br>
+                    <div class="d-flex mb-4 align-items-center">
+                      <span class="ml-auto"><a href="index.php" class="forgot-pass">Regresar a la página de inicio</a></span>
+<!--                 
+                      <span class="ml-auto"><a href="sign_in.php" class="forgot-pass">¿Aún no tienes una cuenta? Registrate aquí</a></span> 
+                    </div>
                     <div class="d-flex mb-4 align-items-center"> 
-                      <span class="ml-auto"><a href="index.php" class="forgot-pass">Regresar a la página de inicio</a></span> 
+                      <span class="ml-auto"><a href="index.php" class="forgot-pass">Regresar a la página inicio</a></span> 
+-->
                     </div>
                     <span class="d-block text-center my-4 text-muted"> O inicia sesión con Facebook</span>
                     <div class="social-login text-center">
-                      <a href="#" class="facebook">
+                      <a onclick="onLogFB();" href="#" class="facebook">
                         <span class="icon-facebook mr-3"></span> 
                       </a>
                     </div>
@@ -63,6 +69,9 @@
       <script src="assets/js/popper.min.js"></script>
       <script src="assets/js/bootstrap.min.js"></script>
       <script src="assets/js/login.js"></script>
+      <script src="develop/js/cookies.js"></script>
+      <script src="develop/js/scriptsFB.js"></script>
+      <script src="develop/js/login.js"></script>
   </body>
   
 </html>

@@ -80,7 +80,7 @@
                             Nombre de la mascota:
                             </br>Edad:
                             </br>Peso:
-                            </br>Color:
+                            </br>Color: rosa
                             </br>Raza:
                             </br>Sexo:
                             </p>
@@ -140,12 +140,12 @@
                         <label for="btn-modal">X</label>
                         <div class="contenido">
                             <p>
-                            </br>Nombre de la mascota:
-                            </br>Edad:
-                            </br>Peso:
-                            </br>Color:
-                            </br>Raza:
-                            </br>Sexo:
+                            </br>Nombre de la mascota: roky
+                            </br>Edad: 5
+                            </br>Peso: 6
+                            </br>Color: blanco
+                            </br>Raza: gato
+                            </br>Sexo: macho
                             </p>
                             </br>
                             <form >
@@ -170,12 +170,12 @@
                         <label for="btn-modal">X</label>
                         <div class="contenido">
                             <p>
-                            </br>Nombre de la mascota:
-                            </br>Edad:
-                            </br>Peso:
-                            </br>Color:
-                            </br>Raza:
-                            </br>Sexo:
+                            </br>Nombre de la mascota: daisy
+                            </br>Edad: 5
+                            </br>Peso:4
+                            </br>Color:negro
+                            </br>Raza:gato
+                            </br>Sexo:hembra
                             </p>
                             </br>
                             <form >
