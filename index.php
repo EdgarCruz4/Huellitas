@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 
 <head>
   <meta charset="utf-8">
@@ -12,8 +12,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/logo_02.png" rel="icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
@@ -44,14 +43,17 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
-        <h1 class="text-light"><a href="index.html"><span>Refugio Huellitas</span></a></h1>
+        <div class="row">
+          <div class="col"><img src="assets/img/Logo_01.png" class="img-fluid" alt=""></div>
+          <div class="col"><h1 class="text-light"><a href="index.php"><span>Huellitas</span></a></h1></div>
+        </div>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="getstarted scrollto" href="sign_in.php">Registrate</a></li>
+          <li><a class="getstarted scrollto" href="sign_in.php">Regístrate</a></li>
           <li><a class="getstarted scrollto" href="login.php">Inicio de sesión</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -71,29 +73,32 @@
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-6 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-6 col-md-6 portfolio-item filter-app" style="height:375px">
+            <div class="section-title">
+            <p class="subtitulo"> PERROS EN ADOPCIÓN </p>
+            </div>
             <div class="portfolio-wrap">
               <img src="assets/img/perros/perro.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                <a onclick="ctd();" title="More Details"><i class="bi bi-link" ></i></a>
               </div>
-              <div class="portfolio-info">
-                <h4>Caninos</h4>
-                <p>App</p>
+              <div class="portfolio-info" >
+                <h4>Perros</h4>
               </div>
             </div>
           </div>
 
           <div class="col-lg-6 col-md-6 portfolio-item filter-app" style="height:375px">
+            <div class="section-title">
+            <p class="subtitulo"> GATOS EN ADOPCIÓN </p>
+            </div>
             <div class="portfolio-wrap">
               <img src="assets/img/gatos/gato.jpg" class="img-fluid" alt="" style="height:100%; width:100%;">
               <div class="portfolio-links">
-                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                <a onclick="ctc();" title="More Details"><i class="bi bi-link"></i></a>
               </div>
               <div class="portfolio-info">
-                <h4>Felinos</h4>
-                <p>App</p>
+                <h4>Gatos</h4>
               </div>
             </div>
           </div>
@@ -109,7 +114,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <p class="subtitulo">Algunos de nuestros provedores</p>
+          <p class="subtitulo">Algunos de nuestros donadores</p>
         </div>
 
         <div class="clients-slider swiper mt-5 mb-5" data-aos="fade-up" data-aos-delay="100"  data-aos="fade-up">
@@ -135,8 +140,8 @@
         </div>
 
         <div class="section-title mt-2 mb-5" data-aos="fade-up">
-          <a href="#" class="btn btn-primary">¿Deseas conocer más?</a>
-        </div>
+          <a class="button" href="donadores.php">¿Deseas conocer más?</a>
+        </div> 
       </div>
     </section><!-- End Clients Section -->
 
@@ -168,6 +173,8 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="develop/js/cookies.js"></script>
+  <script src="develop/js/indx.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
