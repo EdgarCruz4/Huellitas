@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Catálogo</title>
+  <title>Donaciones</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
   <!-- Animate On Scroll Library -->
@@ -31,26 +31,7 @@
 </head>
 
 <body>
-
-<header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container d-flex align-items-center justify-content-between">
-      <div class="logo">
-        <div class="row">
-          <div class="col"><img src="assets/img/Logo_01.png" class="img-fluid" alt=""></div>
-          <div class="col"><h1 class="text-light"><a href="index.php"><span>Huellitas</span></a></h1></div>
-        </div>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      </div>
-
-    </div>
-  </header><!-- End Header -->
-
-</br>
-</br></br>
-
-  <div class="encabezado">
-    
+    <header>
     <nav>
         <ul>
 		<li><a href="catalogo.php">Catálogo</a></li>
@@ -58,26 +39,8 @@
 		
 	 </ul>
     </nav>
-    
-  </div>
-  
-    <div class="tabla">
-      <br><br><br><br>
-      <table>
-        <tr>
-          <td> Imagen</td>
-          <td> Nombre de la mascota</td>
-          <td> Edad</td>
-          <td> Peso</td>
-          <td> Color</td>
-          <td> Raza</td>
-          <td> Sexo</td>
-          <td> Modificar</td>
-          <td> Eliminar</td>
+    </header>
 
-        </tr>
-      </table>
-    </div>
 </body>
 
 </html>
