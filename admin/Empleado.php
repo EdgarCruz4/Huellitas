@@ -98,76 +98,10 @@ if ($vsesion == null || $vsesion = '') {
 
         <!-- =============================================CATALOGO===================================================== -->
         <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-          <div>
-            <br>
-            <!-- ==========================MODAL 1======================================== ¡-->
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              Nuevo registro
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalC" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                <div class="modal-header" style="background-color: #0D6EFD !important;">
-                    <h5 class="modal-title" id="exampleModalLabel" style="color:antiquewhite">Nuevo registro</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-
-
-                    <form action="php/RegMascotas.php" method="POST" name="form">
-                      <div class="mb-2">
-                        <label class="form-label">Foto</label>
-                        <input type="file" class="form-control" name="Foto" placeholder="" require>
-                      </div>
-                      <div class="mb-2">
-                        <label class="form-label">Seleciona la especie: &nbsp;</label>
-                        <select class="form-select" aria-label="Default select example" name="Especie">
-                          <option value="Perro" selected>Perro</option>
-                          <option value="Gato">Gato</option>
-                        </select>
-                      </div>
-                      <div class="mb-2">
-                        <label class="form-label">Seleciona el sexo: &nbsp;</label>
-                        <select class="form-select" aria-label="Default select example" name="Sexo">
-                          <option value="Macho">Macho</option>
-                          <option value="Hembra">Hembra</option>
-                        </select>
-                      </div>
-                      <div class="mb-2">
-                        <input type="text" class="form-control" name="Nombre" placeholder="Nombre" required>
-                      </div>
-                      <div class="mb-2">
-                        <input type="text" class="form-control" name="Raza" placeholder="Raza" required>
-                      </div>
-                      <div class="mb-2">
-                        <input type="text" class="form-control" name="Color" placeholder="Color" required>
-                      </div>
-                      <div class="mb-2">
-                        <input type="text" class="form-control" name="Peso" placeholder="Peso" required>
-                      </div>
-                      <div class="mb-2">
-                        <input type="text" class="form-control" name="Edad" placeholder="Edad" require>
-                      </div>
-                      <br>
-                      <button type="submit" class="btn btn-primary">Guardar</button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- ========================== FIN MODAL 1======================================== ¡-->
-
-          </div>
           <br>
-
           <table class="table table-hover table-condensed table-bordered ">
             <thead class="table-dark">
               <tr>
-                <td>Id</td>
                 <td>Foto</td>
                 <td>Nombre</td>
                 <td>Especie</td>
@@ -176,8 +110,6 @@ if ($vsesion == null || $vsesion = '') {
                 <td>Peso</td>
                 <td>Color</td>
                 <td>Edad</td>
-                <td>Editar</td>
-                <td>Borrar</td>
               </tr>
             </thead>
             <?php
@@ -194,7 +126,6 @@ if ($vsesion == null || $vsesion = '') {
             ?>
 
               <tr>
-                <td><?php echo $ver[0] ?></td>
                 <td><img src="<?php echo ('assets/img/' . $tipo . '/' . $ver[1]) ?>" width="120" alt="15"></td>
                 <td><?php echo $ver[2] ?></td>
                 <td><?php echo $ver[3] ?></td>
@@ -203,17 +134,6 @@ if ($vsesion == null || $vsesion = '') {
                 <td><?php echo $ver[6] ?></td>
                 <td><?php echo $ver[7] ?></td>
                 <td><?php echo $ver[8] ?></td>
-
-
-                <td>
-                  <button class="btn btn-warning  bi bi-pen" data-toggle="modal" data-target="#ModEditarMascotas<?php echo $ver[0]; ?>"> Editar</button>
-                </td>
-                <td>
-                  <button id="btnBorrar" class="btn btn-danger  bi bi-trash3" data-toggle="modal" data-target="#ModEliminarMascotas<?php echo $ver[0]; ?>"> Borrar</button>
-                </td>
-              </tr>
-              <?php require('ModEditarMascotas.php') ?>
-              <?php require('ModEliminarMascotas.php') ?>
             <!-- ========================== FIN MODAL 1======================================== ¡-->
 
             <?php
@@ -248,7 +168,7 @@ if ($vsesion == null || $vsesion = '') {
                     <div class="modal-body">
 
 
-                      <form action="php/RegDonaciones.php" method="POST" name="form">
+                      <form action="php/RegDonacionesEmp.php" method="POST" name="form">
                         <div class="mb-2">
                           <label class="form-label"></label>
                           <input type="text" class="form-control" name="Concepto" placeholder="Concepto">
@@ -292,10 +212,10 @@ if ($vsesion == null || $vsesion = '') {
                   <td><?php echo $ver[1] ?></td>
                   <td><?php echo $ver[2] ?></td>
                   <td>
-                    <button id="btnBorrar" class="btn btn-danger  bi bi-trash3" data-toggle="modal" data-target="#ModEliminarDonaciones<?php echo $ver[0]; ?>"> Borrar</button>
+                    <button id="btnBorrar" class="btn btn-danger  bi bi-trash3" data-toggle="modal" data-target="#ModEliminarDonacionesEmp<?php echo $ver[0]; ?>"> Borrar</button>
                   </td>
                 </tr>
-                <?php require('ModEliminarDonaciones.php') ?>
+                <?php require('ModEliminarDonacionesEmp.php') ?>
               <?php
               }
               ?>

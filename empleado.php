@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/css/login.css">
     <!-- Favicons -->
     <link href="assets/img/logo_02.png" rel="icon">
-      <title>Login_Admin</title>
+      <title>Empleado</title>
   </head>    
   <body>
     <div class="content">
@@ -29,12 +29,12 @@
                   <div class="mb-5" align="center">
                     <h1><strong>Huellitas</strong></h1>
                     <td>
-                    <a href="#"><button class="button">Administrador</button></a>
-                    <a href="empleado.php"><button class="button">Empleado</button></a>
+                    <a href="admin.php"><button class="button">Administrador</button></a>
+                    <a href="#"><button class="button">Empleado</button></a>
                     </td>
                   </div>
 
-                  <form action="./admin/php/ValidarAdmin.php" method="post">
+                  <form action="./admin/php/ValidarEmpleado.php" method="post">
                     <div class="form-group first">
                       <label for="usuario">Usuario</label>
                       <input type="text" class="form-control" name="usuario" required>

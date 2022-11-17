@@ -2,9 +2,12 @@
     require("database.php");
     $usuario=$_POST['usuario'];
     $password=$_POST['password'];
+
+    echo $usuario;
+    echo $password;
     //conectar a base de datos
     $conexion= Conexion();
-    $consulta="SELECT * FROM admin WHERE usuario='$usuario' and password ='$password'";
+    $consulta="SELECT * FROM empleado WHERE usuario='$usuario' and password ='$password'";
  
     $Result=mysqli_query($conexion, $consulta);
 
@@ -15,10 +18,10 @@
              session_start();
             $_SESSION['usuario']=$usuario;
             // redirecionara a pagina..
-            header("location:../Admin.php");
+            header("location:../Empleado.php");
         } else {
               // alerta de usuario ou contraseña no valido
-             echo '<script language="javascript">alert("Error de autentificacion");window.location.href="../../admin.php"</script>';
+             echo '<script language="javascript">alert("Error de autentificacion");window.location.href="../../empleado.php"</script>';
         }
 
     mysqli_free_result($Result);
