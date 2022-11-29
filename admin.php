@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Style -->
-    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/admin.css">
     <!-- Favicons -->
     <link href="assets/img/logo_02.png" rel="icon">
       <title>Login</title>
@@ -29,6 +29,16 @@
                   <div class="mb-5" align="center">
                     <h3>Inicia sesión en <strong>Huellitas</strong></h3>
                   </div>
+
+                  <div class="bot1" align="center">
+                      <a href="#">
+                        <button class="button">Administrador</button>
+                      </a>
+                      <a href="#">
+                        <button class="button">Trabajador</button>
+                      </a>
+                  </div>  
+
                   <form action="#" method="post" id="formularioDts">
                     <div class="form-group first">
                       <label for="correo">Usuario</label>
@@ -38,9 +48,11 @@
                       <label for="password">Contraseña</label>
                       <input type="password" class="form-control" id="password" required>
                     </div>
-                    <div>
+
+                    <div class="bot2">
                       <button class="button" type="submit" >Iniciar sesión</button>
                     </div>
+
                   </form>
                 </div>
               </div>
