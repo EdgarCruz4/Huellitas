@@ -10,10 +10,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Style -->
-    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/dis_admin.css">
     <!-- Favicons -->
     <link href="assets/img/logo_02.png" rel="icon">
-      <title>Login_Admin</title>
+      <title>Administrador</title>
   </head>    
   <body>
     <div class="content">
@@ -28,10 +28,15 @@
                 <div class="form-block">
                   <div class="mb-5" align="center">
                     <h1><strong>Huellitas</strong></h1>
-                    <td>
-                    <a href="#"><button class="button">Administrador</button></a>
-                    <a href="empleado.php"><button class="button">Empleado</button></a>
-                    </td>
+
+                    </br>
+                    <div class="bot1" align="center">
+                      <td>
+                      <a href="#"><button class="button">Administrador</button></a>
+                      <a href="empleado.php"><button class="button">Empleado</button></a>
+                      </td>
+                    </div>
+                    
                   </div>
 
                   <form action="./admin/php/ValidarAdmin.php" method="post">
@@ -43,8 +48,8 @@
                       <label for="password">Contraseña</label>
                       <input type="password" class="form-control" name="password" required>
                     </div>
-                    <div>
-                      <button class="button" type="submit" >Iniciar sesión</button>
+                    <div class="bot2">
+                      <button class="button_1" type="submit" >Iniciar sesión</button>
                     </div>
                     </br>
                   </form>
