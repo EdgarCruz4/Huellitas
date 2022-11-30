@@ -17,7 +17,7 @@ if ($vsesion == null || $vsesion = '') {
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Admin</title>
+  <title>Empleado</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
   <!-- Animate On Scroll Library -->
