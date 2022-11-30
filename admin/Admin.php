@@ -38,7 +38,8 @@ if ($vsesion == null || $vsesion = '') {
   <link href="assets/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="../assets/css/style.css" rel="stylesheet">
+  <!-- <link href="../assets/css/style.css" rel="stylesheet"> -->
+  <link href=assets/css/tablas.css rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Ninestars - v4.9.1
@@ -71,10 +72,8 @@ if ($vsesion == null || $vsesion = '') {
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="getstarted scrollto" href="./php/destroyed.php">Cerrar de sesión</a></li>
-          <li><a class="getstarted scrollto" href="#"><?php
-                                                      echo "" . $_SESSION['usuario']; ?></a></li>
-
-
+          <li class="text_1"><a ><?php
+           echo "" . $_SESSION['usuario']; ?></a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -86,8 +85,8 @@ if ($vsesion == null || $vsesion = '') {
 
       <nav>
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true" style="background-color:#">Catalogo</button>
-          <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false" style="background-color: #">Donaciones</button>
+          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true" >Catalogo</button>
+          <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false" >Donaciones</button>
         </div>
       </nav>
 
@@ -102,7 +101,7 @@ if ($vsesion == null || $vsesion = '') {
             <br>
             <!-- ==========================MODAL 1======================================== ¡-->
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn_btn-warning_bi_bi-pen" data-bs-toggle="modal" data-bs-target="#exampleModal">
               Nuevo registro
             </button>
 
@@ -110,8 +109,8 @@ if ($vsesion == null || $vsesion = '') {
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalC" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
-                <div class="modal-header" style="background-color: #0D6EFD !important;">
-                    <h5 class="modal-title" id="exampleModalLabel" style="color:antiquewhite">Nuevo registro</h5>
+                <div class="modal-header" >
+                    <h5 id="exampleModalLabel">Nuevo registro</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
@@ -152,7 +151,7 @@ if ($vsesion == null || $vsesion = '') {
                         <input type="text" class="form-control" name="Edad" placeholder="Edad" require>
                       </div>
                       <br>
-                      <button type="submit" class="btn btn-primary">Guardar</button>
+                      <button type="submit" class="btn_btn-warning_bi_bi-pen">Guardar</button>
                     </form>
                   </div>
                 </div>
@@ -206,10 +205,10 @@ if ($vsesion == null || $vsesion = '') {
 
 
                 <td>
-                  <button class="btn btn-warning  bi bi-pen" data-toggle="modal" data-target="#ModEditarMascotas<?php echo $ver[0]; ?>"> Editar</button>
+                  <button class="btn_btn-danger_bi_bi-trash2" data-toggle="modal" data-target="#ModEditarMascotas<?php echo $ver[0]; ?>"> Editar</button>
                 </td>
                 <td>
-                  <button id="btnBorrar" class="btn btn-danger  bi bi-trash3" data-toggle="modal" data-target="#ModEliminarMascotas<?php echo $ver[0]; ?>"> Borrar</button>
+                  <button id="btnBorrar" class="btn_btn-danger_bi_bi-trash3" data-toggle="modal" data-target="#ModEliminarMascotas<?php echo $ver[0]; ?>"> Borrar</button>
                 </td>
               </tr>
               <?php require('ModEditarMascotas.php') ?>
@@ -233,7 +232,7 @@ if ($vsesion == null || $vsesion = '') {
           <div>
             <div>
               <br>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#DonacionesModal">
+              <button type="button" class="btn_btn-warning_bi_bi-pen" data-bs-toggle="modal" data-bs-target="#DonacionesModal">
                 Nuevo registro
               </button>
 
@@ -241,8 +240,8 @@ if ($vsesion == null || $vsesion = '') {
               <div class="modal fade" id="DonacionesModal" tabindex="-1" aria-labelledby="DonacionesModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
-                    <div class="modal-header" style="background-color: #0B5ED7 !important;">
-                      <h5 class="modal-title" id="DonacionesModalLabel" style="color:antiquewhite">Nuevo registro</h5>
+                    <div class="modal-header">
+                      <h5 id="DonacionesModalLabel" >Nuevo registro</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -257,7 +256,7 @@ if ($vsesion == null || $vsesion = '') {
                           <input type="numer" class="form-control" name="Cantidad" placeholder="Cantidad">
                         </div>
                         <br>
-                        <button type="submit" class="btn btn-primary">Guardar</button>
+                        <button type="submit" class="btn_btn-warning_bi_bi-pen">Guardar</button>
                       </form>
                     </div>
                   </div>
@@ -292,7 +291,7 @@ if ($vsesion == null || $vsesion = '') {
                   <td><?php echo $ver[1] ?></td>
                   <td><?php echo $ver[2] ?></td>
                   <td>
-                    <button id="btnBorrar" class="btn btn-danger  bi bi-trash3" data-toggle="modal" data-target="#ModEliminarDonaciones<?php echo $ver[0]; ?>"> Borrar</button>
+                    <button id="btnBorrar" class="btn_btn-danger_bi_bi-trash3" data-toggle="modal" data-target="#ModEliminarDonaciones<?php echo $ver[0]; ?>"> Borrar</button>
                   </td>
                 </tr>
                 <?php require('ModEliminarDonaciones.php') ?>

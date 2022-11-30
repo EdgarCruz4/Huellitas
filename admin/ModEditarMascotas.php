@@ -2,8 +2,8 @@
  <div class="modal fade" id="ModEditarMascotas<?php echo $ver[0]; ?>" tabindex="-1" role="dialog" aria-labelledby="ModEditarMascotaslavel" aria-hidden="true">
    <div class="modal-dialog">
      <div class="modal-content">
-       <div class="modal-header" style="background-color: #FFCA2C !important;">
-         <h5 class="modal-title" id="ModEditarMascotaslavel" style="color:antiquewhite">Editar registro</h5>
+       <div class="modal-header" >
+         <h5 id="ModEditarMascotaslavel">Editar registro</h5>
        </div>
        <div class="modal-body">
 
@@ -46,8 +46,8 @@
            <br>
            
            <div class="modal-footer">
-             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-             <button type="submit" class="btn btn-warning">Guardar</button>
+             <button type="button" class="btn_btn-warning_bi_bi-pen" data-dismiss="modal">Cerrar</button>
+             <button type="submit" class="btn_btn-warning_bi_bi-pen" >Guardar</button>
            </div>
          </form>
        </div>

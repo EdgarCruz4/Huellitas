@@ -39,6 +39,8 @@ if ($vsesion == null || $vsesion = '') {
 
   <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
+  <link href=assets/css/tablas.css rel="stylesheet">
+
 
   <!-- =======================================================
   * Template Name: Ninestars - v4.9.1
@@ -71,8 +73,8 @@ if ($vsesion == null || $vsesion = '') {
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="getstarted scrollto" href="./php/destroyed.php">Cerrar de sesión</a></li>
-          <li><a class="getstarted scrollto" href="#"><?php
-                                                      echo "" . $_SESSION['usuario']; ?></a></li>
+          <li class="text_1"><a ><?php
+           echo "" . $_SESSION['usuario']; ?></a></li>
 
 
         </ul>
@@ -153,7 +155,7 @@ if ($vsesion == null || $vsesion = '') {
           <div>
             <div>
               <br>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#DonacionesModal">
+              <button type="button" class="btn_btn-warning_bi_bi-pen" data-bs-toggle="modal" data-bs-target="#DonacionesModal">
                 Nuevo registro
               </button>
 
@@ -161,8 +163,8 @@ if ($vsesion == null || $vsesion = '') {
               <div class="modal fade" id="DonacionesModal" tabindex="-1" aria-labelledby="DonacionesModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
-                    <div class="modal-header" style="background-color: #0B5ED7 !important;">
-                      <h5 class="modal-title" id="DonacionesModalLabel" style="color:antiquewhite">Nuevo registro</h5>
+                    <div class="modal-header" >
+                      <h5  id="DonacionesModalLabel">Nuevo registro</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -177,7 +179,7 @@ if ($vsesion == null || $vsesion = '') {
                           <input type="numer" class="form-control" name="Cantidad" placeholder="Cantidad">
                         </div>
                         <br>
-                        <button type="submit" class="btn btn-primary">Guardar</button>
+                        <button type="submit" class="btn_btn-warning_bi_bi-pen">Guardar</button>
                       </form>
                     </div>
                   </div>
@@ -212,7 +214,7 @@ if ($vsesion == null || $vsesion = '') {
                   <td><?php echo $ver[1] ?></td>
                   <td><?php echo $ver[2] ?></td>
                   <td>
-                    <button id="btnBorrar" class="btn btn-danger  bi bi-trash3" data-toggle="modal" data-target="#ModEliminarDonacionesEmp<?php echo $ver[0]; ?>"> Borrar</button>
+                    <button id="btnBorrar" class="btn_btn-danger_bi_bi-trash3" data-toggle="modal" data-target="#ModEliminarDonacionesEmp<?php echo $ver[0]; ?>"> Borrar</button>
                   </td>
                 </tr>
                 <?php require('ModEliminarDonacionesEmp.php') ?>
