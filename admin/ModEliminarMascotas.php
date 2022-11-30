@@ -3,7 +3,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-            <h4 class="modal-title" style="color:antiquewhite">
+            <h4 class="modal-title">
                 ¿Realmente deseas eliminar esta mascota? 
             </h4>
         </div>
