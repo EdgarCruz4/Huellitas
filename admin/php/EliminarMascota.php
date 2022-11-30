@@ -10,6 +10,6 @@ $DeleteRegistro = ("DELETE FROM mascota WHERE id= '".$id."' ");
 $sql=mysqli_query($conexion, $DeleteRegistro);
 
 if(isset($sql)){
-    header("location:../Empleado.php");
+    header("location:../Admin.php");
 }
 ?>
