@@ -23,9 +23,11 @@ window.onload=function() {
                 array.forEach(row1 => {
                     let div0 = document.createElement("div");
                     row1.forEach(row2 => {
+                        // alert(`assets/img/.${row2.raza}.s/".${row2.foto}"`);
                         div0.innerHTML=`
                         <div>
-                            <img class="img" src=${row2.foto} class="img-fluid" alt="">
+
+                            <img class="img" src="assets/img/${row2.raza}s/${row2.foto}" class="img-fluid" alt="">
                         </div>
                         <p class="text"> ${row2.nombre} </p>
                     

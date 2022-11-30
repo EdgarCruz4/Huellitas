@@ -14,9 +14,9 @@ VALUES('$Concepto', '$Cantidad')";
 
  if ($Result== true) {
        // redireccion despues del registro
-      header("location:../Admin.php");
+      header("location:../../AdminVista.php");
   } else {
         // alerta de registro no valido
-       echo '<script language="javascript">alert("Error de registro");window.location.href="../Admin.php."</script>';
+       echo '<script language="javascript">alert("Error de registro");window.location.href="../../Admin.php."</script>';
   }
 ?>

@@ -10,6 +10,6 @@ $DeleteRegistro = ("DELETE FROM donaciones WHERE id= '".$id."' ");
 $sql=mysqli_query($conexion, $DeleteRegistro);
 
 if(isset($sql)){
-    header("location:../Admin.php");
+    header("location:../../EmpleadoVista.php");
 }
 ?>

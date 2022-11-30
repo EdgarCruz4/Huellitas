@@ -6,10 +6,10 @@ $id = $_POST["id"];
 
 
 $conexion=conexion();
-$DeleteRegistro = ("DELETE FROM donaciones WHERE id= '".$id."' ");
+$DeleteRegistro = ("DELETE FROM mascotas WHERE id= '".$id."' ");
 $sql=mysqli_query($conexion, $DeleteRegistro);
 
 if(isset($sql)){
-    header("location:../Empleado.php");
+    header("location:../../AdminVista.php");
 }
 ?>
