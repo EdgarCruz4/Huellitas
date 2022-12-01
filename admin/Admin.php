@@ -85,7 +85,7 @@ if ($vsesion == null || $vsesion = '') {
 
       <nav>
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true" >Catálogo</button>
+          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true" >Catlogo</button>
           <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false" >Donaciones</button>
         </div>
       </nav>
@@ -163,8 +163,8 @@ if ($vsesion == null || $vsesion = '') {
           </div>
           <br>
 
-          <table class="table table-hover table-condensed table-bordered ">
-            <thead class="table-dark">
+          <table class="table table-hover table-condensed table-bordered" >
+            <thead class="table" style="background-color: #02253C; color: #ffffff">
               <tr>
                 <td>Id</td>
                 <td>Foto</td>
@@ -271,7 +271,7 @@ if ($vsesion == null || $vsesion = '') {
             <br>
 
             <table class="table table-hover table-condensed table-bordered ">
-              <thead class="table-dark">
+              <thead class="table" style="background-color: #02253C; color: #ffffff">
                 <tr>
                   <td>Id</td>
                   <td>Concepto</td>

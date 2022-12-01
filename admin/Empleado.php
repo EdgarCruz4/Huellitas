@@ -102,7 +102,7 @@ if ($vsesion == null || $vsesion = '') {
         <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
           <br>
           <table class="table table-hover table-condensed table-bordered ">
-            <thead class="table-dark">
+            <thead class="table" style="background-color: #02253C; color: #ffffff">
               <tr>
                 <td>Foto</td>
                 <td>Nombre</td>
@@ -194,7 +194,7 @@ if ($vsesion == null || $vsesion = '') {
             <br>
 
             <table class="table table-hover table-condensed table-bordered ">
-              <thead class="table-dark">
+              <thead class="table" style="background-color: #02253C; color: #ffffff">
                 <tr>
                   <td>Id</td>
                   <td>Concepto</td>
