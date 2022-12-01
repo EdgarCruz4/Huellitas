@@ -162,8 +162,10 @@ if ($vsesion == null || $vsesion = '') {
           </div>
           <br>
 
-          <table class="table table-hover table-condensed table-bordered ">
-            <thead class="table-dark">
+
+          <table class="table table-hover table-condensed table-bordered" >
+            <thead class="table" style="background-color: #02253C; color: #ffffff">
+
               <tr>
               <td>Foto</td>
                 <td>Nombre</td>
@@ -266,7 +268,7 @@ if ($vsesion == null || $vsesion = '') {
             <br>
 
             <table class="table table-hover table-condensed table-bordered ">
-              <thead class="table-dark">
+            <thead class="table" style="background-color: #02253C; color: #ffffff">
                 <tr>
                 <td>Concepto</td>
                   <td>Cantidad</td>

@@ -788,21 +788,6 @@ body {
   }
 
 
-/*
-.btn3{
-      background: #0785DB;
-      border-color:  #0785DB;
-      color: #ffffff;
-      padding: 10px 25px;
-      margin-left: 30px;
-      font-family: Arial;
-}
-.btn3:hover {
-  color: #000000;
-  background: #76C5FA;
-  border-color:  #76C5FA;
-}*/
-
 
 
 /*---------modal-editar registro--------*/
@@ -875,4 +860,6 @@ body {
     font-family: Perpetua;
     font-size: 20px;
     border-radius: 8px;
+
 }
+
