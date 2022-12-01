@@ -18,7 +18,7 @@
              session_start();
             $_SESSION['usuario']=$usuario;
             // redirecionara a pagina..
-            header("location:../Empleado.php");
+            header("location:../../EmpleadoVista.php");
         } else {
               // alerta de usuario ou contraseña no valido
              echo '<script language="javascript">alert("Error de autentificacion");window.location.href="../../empleado.php"</script>';
@@ -27,4 +27,4 @@
     mysqli_free_result($Result);
     mysqli_close($conexion);
 
-?>	                    
+?>	                                    

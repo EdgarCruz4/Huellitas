@@ -1,5 +1,6 @@
+
 <!-- Ventana modal para eliminar -->
-<div class="modal fade" id="ModEliminarDonaciones<?php echo $ver[0]; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="ModEliminarDonacionesEmp<?php echo $ver[0]; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -7,7 +8,7 @@
                 ¿Realmente deseas eliminar? 
             </h4>
         </div>
-        <form action="php/EliminarDonaciones.php" method="POST" name="form">
+        <form action="develop/php/EliminarDonacionesEmp.php" method="POST" name="form">
         <div class="modal-body">
           <strong style="text-align: center !important"> 
             <h3><?php echo $ver[1]; ?></h3>

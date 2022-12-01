@@ -1,12 +1,12 @@
 <?php
-require_once("./php/database.php");
+require_once("develop/php/database.php");
 $conexion = conexion();
 session_start();
 error_reporting(0);
 $_SESSION['usuario'];
 $vsesion = $_SESSION['usuario'];
 if ($vsesion == null || $vsesion = '') {
-  echo '<script language="javascript">alert("Inicia Sesión");window.location.href="../admin.php"</script>';
+  echo '<script language="javascript">alert("Inicia Sesión");window.location.href="admin.php"</script>';
   die();
 }
 ?>
@@ -24,17 +24,17 @@ if ($vsesion == null || $vsesion = '') {
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- Favicons -->
-  <link href="../assets/img/logo_02.png" rel="icon">
+  <link href="assets/img/logo_02.png" rel="icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
@@ -57,7 +57,7 @@ if ($vsesion == null || $vsesion = '') {
 
       <div class="logo">
         <div class="row">
-          <div class="col"><img src="../assets/img/Logo_01.png" class="img-fluid" alt=""></div>
+          <div class="col"><img src="assets/img/Logo_01.png" class="img-fluid" alt=""></div>
 
           <div class="col">
             <h1 class="text-light"><a href="Admin.php"><span>Huellitas</span></a></h1>
@@ -71,7 +71,7 @@ if ($vsesion == null || $vsesion = '') {
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="getstarted scrollto" href="./php/destroyed.php">Cerrar de sesión</a></li>
+          <li><a class="getstarted scrollto" href="develop/php/destroyed.php">Cerrar de sesión</a></li>
           <li class="text_1"><a ><?php
            echo "" . $_SESSION['usuario']; ?></a></li>
         </ul>
@@ -116,7 +116,7 @@ if ($vsesion == null || $vsesion = '') {
                   <div class="modal-body">
 
 
-                    <form action="php/RegMascotas.php" method="POST" name="form">
+                  <form action="develop/php/RegMascotas.php" method="POST" name="form">
                       <div class="mb-2">
                         <label class="form-label">Foto</label>
                         <input type="file" class="form-control" name="Foto" placeholder="" require>
@@ -139,9 +139,6 @@ if ($vsesion == null || $vsesion = '') {
                         <input type="text" class="form-control" name="Nombre" placeholder="Nombre" required>
                       </div>
                       <div class="mb-2">
-                        <input type="text" class="form-control" name="Raza" placeholder="Raza" required>
-                      </div>
-                      <div class="mb-2">
                         <input type="text" class="form-control" name="Color" placeholder="Color" required>
                       </div>
                       <div class="mb-2">
@@ -151,7 +148,9 @@ if ($vsesion == null || $vsesion = '') {
                         <input type="text" class="form-control" name="Edad" placeholder="Edad" require>
                       </div>
                       <br>
+                      <div class="modal-footer">
                       <button type="submit" class="btn_btn-warning_bi_bi-pen">Guardar</button>
+                      </div>
                     </form>
                   </div>
                 </div>
@@ -166,11 +165,9 @@ if ($vsesion == null || $vsesion = '') {
           <table class="table table-hover table-condensed table-bordered ">
             <thead class="table-dark">
               <tr>
-                <td>Id</td>
-                <td>Foto</td>
+              <td>Foto</td>
                 <td>Nombre</td>
                 <td>Especie</td>
-                <td>Raza</td>
                 <td>Sexo</td>
                 <td>Peso</td>
                 <td>Color</td>
@@ -180,8 +177,8 @@ if ($vsesion == null || $vsesion = '') {
               </tr>
             </thead>
             <?php
-            $sql = "SELECT id,foto,nombre,especie,raza,sexo,peso,color,edad
-                    FROM mascota";
+            $sql = "SELECT id,foto,nombre,raza,sexo,peso,color,edad
+                    FROM mascotas";
             $resu = mysqli_query($conexion, $sql);
             while ($ver = mysqli_fetch_row($resu)) {
               $tipo = $ver[3];
@@ -193,15 +190,13 @@ if ($vsesion == null || $vsesion = '') {
             ?>
 
               <tr>
-                <td><?php echo $ver[0] ?></td>
                 <td><img src="<?php echo ('assets/img/' . $tipo . '/' . $ver[1]) ?>" width="120" alt="15"></td>
                 <td><?php echo $ver[2] ?></td>
                 <td><?php echo $ver[3] ?></td>
                 <td><?php echo $ver[4] ?></td>
-                <td><?php echo $ver[5] ?></td>
+                <td><?php echo $ver[5].' Kilos' ?></td>
                 <td><?php echo $ver[6] ?></td>
-                <td><?php echo $ver[7] ?></td>
-                <td><?php echo $ver[8] ?></td>
+                <td><?php echo $ver[7].' Años' ?></td>
 
 
                 <td>
@@ -247,7 +242,7 @@ if ($vsesion == null || $vsesion = '') {
                     <div class="modal-body">
 
 
-                      <form action="php/RegDonaciones.php" method="POST" name="form">
+                      <form action="develop/php/RegDonaciones.php" method="POST" name="form">
                         <div class="mb-2">
                           <label class="form-label"></label>
                           <input type="text" class="form-control" name="Concepto" placeholder="Concepto">
@@ -273,8 +268,7 @@ if ($vsesion == null || $vsesion = '') {
             <table class="table table-hover table-condensed table-bordered ">
               <thead class="table-dark">
                 <tr>
-                  <td>Id</td>
-                  <td>Concepto</td>
+                <td>Concepto</td>
                   <td>Cantidad</td>
                   <td>Eliminar</td>
 
@@ -287,7 +281,7 @@ if ($vsesion == null || $vsesion = '') {
               while ($ver = mysqli_fetch_row($resul)) {
               ?>
                 <tr>
-                  <td><?php echo $ver[0] ?></td>
+                 
                   <td><?php echo $ver[1] ?></td>
                   <td><?php echo $ver[2] ?></td>
                   <td>
@@ -330,14 +324,14 @@ if ($vsesion == null || $vsesion = '') {
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <!-- Vendor JS Files -->
-  <script src="../assets/vendor/aos/aos.js"></script>
-  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="../assets/vendor/php-email-form/validate.js"></script>
-  <script src="../develop/js/cookies.js"></script>
-  <script src="../develop/js/indx.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="develop/js/cookies.js"></script>
+  <script src="develop/js/indx.js"></script>
   <script scr="assets/bootstrap/js/bootstrap.min.js"></script>
 
   <!-- Template Main JS File -->
@@ -345,16 +339,16 @@ if ($vsesion == null || $vsesion = '') {
   <script>
     AOS.init();
   </script>
-<script src="js/jquery.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src="develop/js/jquery.min.js"></script>
+<script src="develop/js/popper.min.js"></script>
+<script src="develop/js/bootstrap.min.js"></script>
 <script>
   window.onload = function() {
     killerSession();
   }
 
   function killerSession() {
-    setTimeout("window.open('./php/destroyed.php','_top');", 9999999);
+    setTimeout("window.open('develop/php/destroyed.php','_top');", 9999999);
   }
 </script>
 

@@ -37,7 +37,7 @@
                     </div>
                   </div>
 
-                  <form action="./admin/php/ValidarEmpleado.php" method="post">
+                  <form action="develop/php/ValidarEmpleado.php" method="post">
                     <div class="form-group first">
                       <label for="usuario">Usuario</label>
                       <input type="text" class="form-control" name="usuario" required>

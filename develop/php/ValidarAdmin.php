@@ -15,7 +15,7 @@
              session_start();
             $_SESSION['usuario']=$usuario;
             // redirecionara a pagina..
-            header("location:../Admin.php");
+            header("location:../../AdminVista.php");
         } else {
               // alerta de usuario ou contraseña no valido
              echo '<script language="javascript">alert("Error de autentificacion");window.location.href="../../admin.php"</script>';
