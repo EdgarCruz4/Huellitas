@@ -72,7 +72,7 @@ if ($vsesion == null || $vsesion = '') {
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="getstarted scrollto" href="develop/php/destroyed.php">Cerrar de sesión</a></li>
+          <li><a class="getstarted scrollto" href="develop/php/destroyed.php">Cerrar  sesión</a></li>
           <li class="text_1"><a ><?php
            echo "" . $_SESSION['usuario']; ?></a></li>
 
